@@ -30,14 +30,12 @@ var qs = []*survey.Question{
 		Validate: survey.Required,
 	},
 	{
-		Name:      "body",
-		Prompt:    &survey.Input{Message: "What is the body?"},
-		Transform: survey.ToLower,
+		Name:   "body",
+		Prompt: &survey.Multiline{Message: "What is the body?"},
 	},
 	{
-		Name:      "footer",
-		Prompt:    &survey.Input{Message: "What is the footer?"},
-		Transform: survey.ToLower,
+		Name:   "footer",
+		Prompt: &survey.Multiline{Message: "What is the footer?"},
 	},
 }
 
